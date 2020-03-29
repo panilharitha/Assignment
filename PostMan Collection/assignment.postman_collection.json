@@ -73,37 +73,6 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/api/addressbook/updatecontact",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\t\"id\":1,\r\n\t\"name\":\"Bobly\",\r\n\t\"number\":\"0411345678\"\r\n}"
-				},
-				"url": {
-					"raw": "http://localhost:8080/api/addressbook/updatecontact",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"addressbook",
-						"updatecontact"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "http://localhost:8080/api/addressbook/deletecontact",
 			"request": {
 				"method": "POST",
