@@ -119,20 +119,6 @@ public class AddressBookServiceImpl implements AddressBookService {
 	@Override
 	public List<ContactDto> getUniqueContactsForGivenTwoAddressBook(UniqueContactsRequest request) {
 
-//		Map<String, String> values = new HashMap<String, String>();
-//
-//		Common.cache.get(request.getAddressBookOne()).entrySet().stream()
-//				.filter(e -> !Common.cache.get(request.getAddressBookTwo()).containsKey(e.getKey()))
-//				.peek(e -> values.put(e.getKey(), e.getValue()));
-//
-//		Common.cache.get(request.getAddressBookOne()).entrySet().stream()
-//				.filter(e -> !Common.cache.get(request.getAddressBookTwo()).containsKey(e.getKey()))
-//				.filter(e -> !values.containsKey(e.getKey())).peek(e -> values.put(e.getKey(), e.getValue()));
-//		
-//		Common.cache.get(request.getAddressBookOne()).entrySet().stream()
-//	      .collect(Collectors.toMap(e -> e.getKey(), 
-//	        e -> !Common.cache.get(request.getAddressBookTwo()).containsKey(e.getKey())));
-
 		List<ContactDto> response = new ArrayList<ContactDto>();
 		Map<String, String> uniqueDataset = new HashMap<>();
 		
