@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "84bf59d7-bc06-4df7-83ca-5cbac9410c89",
+		"name": "assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/addressbook/findallcontacts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"addressBookName\" : \"Book1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/addressbook/findallcontacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addressbook",
+						"findallcontacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/addressbook/createnewcontact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"addressBookName\" :\"Book1\",\r\n   \"name\":\"Jane\",\r\n   \"number\":\"0412343231\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/addressbook/createnewcontact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addressbook",
+						"createnewcontact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/addressbook/updatecontact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"id\":1,\r\n\t\"name\":\"Bobly\",\r\n\t\"number\":\"0411345678\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/addressbook/updatecontact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addressbook",
+						"updatecontact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/addressbook/deletecontact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"addressBookName\" :\"Book1\",\r\n\t\"name\":\"a\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/addressbook/deletecontact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addressbook",
+						"deletecontact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/addressbook/getuniquecontactsforgiventwoaddressbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"addressBookOne\":\"Book1\",\n\t\"addressBookTwo\":\"Book2\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/addressbook/getuniquecontactsforgiventwoaddressbooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addressbook",
+						"getuniquecontactsforgiventwoaddressbooks"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
